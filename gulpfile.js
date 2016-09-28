@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 gulp.task('css', function () {
   var processors = [
   ];
-  return gulp.src('./src/*.css')
+  return gulp.src('./src/css/*.css')
     .pipe(postcss(processors))
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./dist/css'));
 });
