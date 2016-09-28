@@ -1,3 +1,7 @@
 body {
 	background-color: #FF00FF
 }
+
+.column {
+	display: flex;
+}
