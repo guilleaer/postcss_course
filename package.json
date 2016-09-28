@@ -1,0 +1,19 @@
+{
+  "name": "postcss",
+  "version": "1.0.0",
+  "description": "Learning postcss",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guilleaer/postcss_course.git"
+  },
+  "author": "guilleaer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guilleaer/postcss_course/issues"
+  },
+  "homepage": "https://github.com/guilleaer/postcss_course#readme"
+}
