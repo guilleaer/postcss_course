@@ -4,7 +4,7 @@ var gulp = require('gulp'),
  
 gulp.task('css', function () {
   var processors = [
-    autoprefixer
+    autoprefixer({browsers: ['last 10 chrome versions', 'last 10 Safari versions']})
   ];
   return gulp.src('./src/css/*.css')
     .pipe(postcss(processors))
