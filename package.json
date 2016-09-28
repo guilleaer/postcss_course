@@ -18,6 +18,7 @@
   "homepage": "https://github.com/guilleaer/postcss_course#readme",
   "devDependencies": {
     "autoprefixer": "^6.5.0",
+    "browser-sync": "^2.16.0",
     "gulp": "^3.9.1",
     "gulp-postcss": "^6.2.0"
   }
