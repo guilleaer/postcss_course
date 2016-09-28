@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/guilleaer/postcss_course/issues"
   },
-  "homepage": "https://github.com/guilleaer/postcss_course#readme"
+  "homepage": "https://github.com/guilleaer/postcss_course#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.2.0"
+  }
 }
