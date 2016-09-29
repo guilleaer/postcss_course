@@ -1,7 +1,5 @@
 {
-	//use recommended rules from config
 	"extends": "stylelint-config-standard",
-	//but also you can use your owns
 	"rules": {
 	  "indentation": "tab",
 	  "number-leading-zero": null
