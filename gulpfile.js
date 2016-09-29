@@ -8,12 +8,7 @@ var gulp = require('gulp'),
 gulp.task('css', function () {
   var processors = [
     autoprefixer({browsers: ['last 10 chrome versions', 'last 10 Safari versions']}),
-    stylelint({
-      rules: {
-        "color-no-invalid-hex": true,
-        "color-hex-case": "lower"
-      }
-    }),
+    stylelint,
     reporter({clearMessages: true})
   ];
   return gulp.src('./src/css/*.css')
