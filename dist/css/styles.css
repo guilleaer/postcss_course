@@ -1,11 +1,40 @@
-body {
-  background-color: #201;
-  -webkit-transition: all 0.5;
-  transition: all 0.5;
+.main {
+  border: 1px solid #000;
 }
 
-.column {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
+.socialMediaButtons {
+  width: 100%;
+}
+
+.socialMediaButtons ul {
+  display: block;
+  padding: 0;
+  margin: 10px auto;
+  float: left;
+}
+
+.socialMediaButtons li {
+  list-style: none;
+  background: #000;
+  margin: 0 10px;
+  float: left;
+}
+
+.socialMediaButtons li a {
+  width: 128px;
+  height: 128px;
+  display: block;
+  float: left;
+}
+
+.socialMediaButtons li.twitter a {
+  background-image: url('/img/twitter.png');
+}
+
+.socialMediaButtons li.facebook a {
+  background-image: url('/img/facebook.png');
+}
+
+.socialMediaButtons li.googleplus a {
+  background-image: url('/img/googleplus.png');
 }

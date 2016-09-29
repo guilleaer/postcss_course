@@ -8,11 +8,11 @@ var gulp = require('gulp'),
 
 gulp.task('css', function() {
   var processors = [
+    stylelint,
     precss,
     autoprefixer({
       browsers: ['last 10 chrome versions', 'last 10 Safari versions']
     }),
-    stylelint,
     reporter({ clearMessages: true })
   ];
   return gulp.src('./src/css/*.css')
