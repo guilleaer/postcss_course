@@ -1,6 +1,9 @@
 {
+	//use recommended rules from config
+	"extends": "stylelint-config-standard",
+	//but also you can use your owns
 	"rules": {
-	    "color-no-invalid-hex": true,
-        "color-hex-case": "lower"
+	  "indentation": "tab",
+	  "number-leading-zero": null
 	}
 }
