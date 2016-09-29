@@ -1,22 +1,26 @@
 var gulp = require('gulp'),
-    postcss = require('gulp-postcss'),
-    stylelint = require('stylelint'),
-    reporter = require('postcss-reporter'),
-    autoprefixer = require('autoprefixer'),
-    browserSync = require('browser-sync').create();
+  postcss = require('gulp-postcss'),
+  stylelint = require('stylelint'),
+  reporter = require('postcss-reporter'),
+  autoprefixer = require('autoprefixer'),
+  precss = require('precss'),
+  browserSync = require('browser-sync').create();
 
-gulp.task('css', function () {
+gulp.task('css', function() {
   var processors = [
-    autoprefixer({browsers: ['last 10 chrome versions', 'last 10 Safari versions']}),
+    precss,
+    autoprefixer({
+      browsers: ['last 10 chrome versions', 'last 10 Safari versions']
+    }),
     stylelint,
-    reporter({clearMessages: true})
+    reporter({ clearMessages: true })
   ];
   return gulp.src('./src/css/*.css')
     .pipe(postcss(processors))
     .pipe(gulp.dest('./dist/css'));
 });
 
-gulp.task('html', function () {
+gulp.task('html', function() {
   return gulp.src('./src/*.html')
     .pipe(gulp.dest('./dist'));
 });

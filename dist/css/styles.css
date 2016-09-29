@@ -1,11 +1,11 @@
 body {
-	background-color: #ffaa00;
-	-webkit-transition: all .5s;
-	transition: all .5s;
+  background-color: #201;
+  -webkit-transition: all 0.5;
+  transition: all 0.5;
 }
 
 .column {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
 }

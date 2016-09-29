@@ -1,8 +1,10 @@
+$blue: #201;
+
 body {
-	background-color: #ffaa00;
-	transition: all .5s;
+  background-color: $blue;
+  transition: all 0.5;
 }
 
 .column {
-	display: flex;
+  display: flex;
 }
