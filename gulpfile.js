@@ -1,11 +1,20 @@
 var gulp = require('gulp'),
     postcss = require('gulp-postcss'),
+    stylelint = require('stylelint'),
+    reporter = require('postcss-reporter'),
     autoprefixer = require('autoprefixer'),
     browserSync = require('browser-sync').create();
 
 gulp.task('css', function () {
   var processors = [
-    autoprefixer({browsers: ['last 10 chrome versions', 'last 10 Safari versions']})
+    autoprefixer({browsers: ['last 10 chrome versions', 'last 10 Safari versions']}),
+    stylelint({
+      rules: {
+        "color-no-invalid-hex": true,
+        "color-hex-case": "lower"
+      }
+    }),
+    reporter({clearMessages: true})
   ];
   return gulp.src('./src/css/*.css')
     .pipe(postcss(processors))
