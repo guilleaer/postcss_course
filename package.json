@@ -20,6 +20,8 @@
     "autoprefixer": "^6.5.0",
     "browser-sync": "^2.16.0",
     "gulp": "^3.9.1",
-    "gulp-postcss": "^6.2.0"
+    "gulp-postcss": "^6.2.0",
+    "postcss-reporter": "^1.4.1",
+    "stylelint": "^7.3.1"
   }
 }
